@@ -6,7 +6,7 @@ public class Iu {
 	private int age;
 	
 	private static Iu iu = null;
-	
+	//
 	private  Iu() {
 		
 	}
