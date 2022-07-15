@@ -1,8 +1,9 @@
 package com.gang.terran;
 
+import com.gang.unit.Attacker;
 import com.gang.unit.Unit;
 
-public class Marine extends Unit {
+public class Marine extends Unit implements Attacker {
 
 	   private String weapon;
 	   
@@ -16,7 +17,7 @@ public class Marine extends Unit {
 	   
 	  
 		   
-	   public void shoot() {
+	   private void shoot() {
 		   System.out.println("우당탕탕탕" );
 	   }
 		   
@@ -36,6 +37,14 @@ public class Marine extends Unit {
 		public Marine() {
 			super(30);
 			System.out.println("Marine 생성자");
+			
+		}
+		
+		//인터페이스
+		@Override
+		public void attack() {
+			// TODO Auto-generated method stub
+			this.shoot();
 			
 		}
 	   

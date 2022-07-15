@@ -4,6 +4,7 @@ import com.gang.terran.Marine;
 import com.gang.terran.Race;
 import com.gang.terran.Scv;
 import com.gang.unit.Unit;
+import com.gang.zerg.Hydra;
 
 public class Main1 {
 
@@ -25,6 +26,11 @@ public class Main1 {
 		System.out.println(m1.getWeapon());
 		
 		Unit unit1 = r1;
+		
+		Hydra hydra = new Hydra();
+		
+		m1.attack();
+		hydra.attack();
 		
 			
 		
