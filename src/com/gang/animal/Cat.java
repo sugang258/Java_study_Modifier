@@ -8,7 +8,7 @@ public class Cat {
 		age = 10;
 		System.out.println("냐옹");
 	}
-	
+	//
 	Cat() {}
 
 }
