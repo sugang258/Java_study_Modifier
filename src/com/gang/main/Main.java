@@ -1,28 +1,31 @@
 package com.gang.main;
 
-import com.gang.animal.Cat;
-import com.gang.animal.Human;
-import com.gang.animal.Zoo;
+import java.util.Scanner;
 
+import com.gang.util.CollectionStack;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//Cat cat = new Cat();
-		//cat.sound();
-		//cat.age = 5;
 		
-		Human human = new Human();
-		//human.age = 500;
-		human.setAge(200);
-		human.info();
-		//--------------------------
-		System.out.println(Zoo.title);
-		Zoo.info();
+		int [] numbers = {1,2,3};
 		
-		Zoo zoo = new Zoo();
-		//zoo.price = 10000;
+		//1.com.gang.util.CollectionStack 클래스 생성
+			//add - 입력받은 새로운 숫자 추가 무조건 0번 인덱스에 추가
+			//remove - 0번 인덱스 삭제
+		
+		//2.com.gang.util.CollectionQue
+			//add - 입력받은 새로운 숫자 추가 무조건 0번 인덱스에 추가
+			//remove - 마지막 인덱스 번호 삭제
+
+		//3.com.gang.util.CollectionSet
+			//add - 새로운 숫자 추가 마지막에 추가
+			//	단, 중복되지 않는 숫자만 추가
+			//remove - 삭제 할 숫자를 입력받아서 일치하는 숫자 삭제
+		
+		CollectionStack stack = new CollectionStack();
+		stack.add(numbers);
+		
 
 	}
 
