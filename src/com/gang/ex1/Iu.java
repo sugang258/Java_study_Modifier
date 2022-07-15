@@ -5,6 +5,8 @@ public class Iu {
 	private String name;
 	private int age;
 	
+	private String test;
+	
 	private static Iu iu = null;
 	//
 	private  Iu() {
