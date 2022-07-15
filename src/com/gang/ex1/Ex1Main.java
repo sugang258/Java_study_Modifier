@@ -1,7 +1,7 @@
 package com.gang.ex1;
 
 public class Ex1Main {
-
+//
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//싱글톤(디자인패턴,MVC2)
