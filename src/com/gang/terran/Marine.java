@@ -20,9 +20,22 @@ public class Marine extends Unit {
 		   System.out.println("우당탕탕탕" );
 	   }
 		   
+	   //오버라이딩
 		@Override
 		public void move() {
-			// TODO Auto-generated method stub
+			System.out.println("뛰어다님!!");
+		}
+		
+		//오버라이딩
+		public void info() {
+			
+			super.info();
+			System.out.println("Marine Info");
+		}
+		
+		public Marine() {
+			super(30);
+			System.out.println("Marine 생성자");
 			
 		}
 	   

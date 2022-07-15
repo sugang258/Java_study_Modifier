@@ -40,3 +40,15 @@ public class Iu {
 	//public 리턴타입 get변수명() {}
 
 }
+
+/*
+ * public class Super() {
+ * 		public abstract void t1();
+ * }
+ * 
+ * public class Child extends Super() {
+ * 		public void t1() {} //오버라이딩
+ * 		public void t2() {} //선언
+ * 		public void t1(int i) {} //오버로딩
+ * 		public void t1() {} //중복선언
+ */

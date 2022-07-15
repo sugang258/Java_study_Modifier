@@ -9,6 +9,15 @@ public abstract class Unit {
 	   private String name;
 	   
 	   public abstract void move();
+	   
+	   public void info() {
+		   System.out.println("Super Info");
+	   }
+	   
+	   public Unit(int hp) {
+		   System.out.println("Super 생성자");
+		   this.hp = hp;
+	   }
 		   
 	  
 	   

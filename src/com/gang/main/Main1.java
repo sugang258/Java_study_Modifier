@@ -8,6 +8,8 @@ public class Main1 {
 		// TODO Auto-generated method stub
 		Marine m1 = new Marine();
 		m1.setHp(30);
+		m1.info();
+		
 		
 		
 
