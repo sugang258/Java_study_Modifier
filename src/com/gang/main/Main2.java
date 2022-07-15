@@ -19,7 +19,7 @@ public class Main2 {
 		
 		Client client = new Client();
 		
-		client.buy();
+		client.buy(phone);
 		
 
 	}

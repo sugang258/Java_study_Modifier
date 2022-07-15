@@ -16,32 +16,14 @@ public class Client {
 		this.setPoint(10);
 	}
 	
-	public void buy(Television tv)  {
+	public void buy(HimartUnit himartunit)  {
 		
-			this.money = this.money - tv.getPrice();
-			this.point = this.point  + tv.getPoint();
+			this.money = this.money - himartunit.getPrice();
+			this.point = this.point  + himartunit.getPoint();
 			
 			System.out.println("잔액 : " + this.money);
 			System.out.println("point : " + this.point);
 		
-	}
-	public void buy(Computer com)  {
-		
-		this.money = this.money - com.getPrice();
-		this.point = this.point  + com.getPoint();
-		
-		System.out.println("잔액 : " + this.money);
-		System.out.println("point : " + this.point);
-	
-	}
-	public void buy(Cellphone phone)  {
-	
-	this.money = this.money - phone.getPrice();
-	this.point = this.point  + phone.getPoint();
-	
-	System.out.println("잔액 : " + this.money);
-	System.out.println("point : " + this.point);
-
 	}
 	
 	public int getMoney() {
