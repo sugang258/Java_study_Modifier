@@ -5,10 +5,12 @@ import com.gang.unit.Unit;
 public class Scv extends Unit {
 	   
 	  
-	   public Scv(int hp) {
-		super(hp);
+	   public Scv() {
+		super(30);
 		// TODO Auto-generated constructor stub
 	}
+	
+
 	public void attack() {
 	      System.out.println("공격  치직" );
 	   }
