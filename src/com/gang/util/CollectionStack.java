@@ -30,12 +30,19 @@ public class CollectionStack implements Collection {
 	@Override
 	public int[] remove(int[] numbers) {
 		// TODO Auto-generated method stub
+		nums = new int[numbers.length-1];
+		
+		
 		if(numbers != null) {
-			
+			for(int i=0;i<numbers.length;i++) {
+				nums[i] = numbers[i+1];
+			}
+		}else {
+			System.out.println("제거할 요소가 없습니다.");
 		}
 		
 		
-		return null;
+		return nums;
 	}
 
 }

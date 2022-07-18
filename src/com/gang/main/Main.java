@@ -1,7 +1,5 @@
 package com.gang.main;
 
-import java.util.Scanner;
-
 import com.gang.util.CollectionStack;
 
 public class Main {
