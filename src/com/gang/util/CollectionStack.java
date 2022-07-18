@@ -6,6 +6,7 @@ public class CollectionStack implements Collection {
 	
 	Scanner sc = new Scanner(System.in);
 	int num = 0;
+	int [] nums;
 	
 
 	@Override
@@ -13,22 +14,18 @@ public class CollectionStack implements Collection {
 		// TODO Auto-generated method stub
 		System.out.println("추가할 값을 입력하세요");
 		num = sc.nextInt();
+		nums = new int[numbers.length+1];
 		
-		numbers[numbers.length] = numbers[numbers.length+1];
+			nums[0] = num;
+			
+			for(int i=0;i<numbers.length ;i++) {
+				nums[i+1] = numbers[i]; 
+			}
 		
-		if(numbers != null) {
-			
-			
-		for(int i=0 ;i < numbers.length+1;i++) {
-			
-			numbers[i] = numbers[i+1];
-			
-		}
-		}
-		numbers[0] = num;
 		
-		return numbers;
+		return nums;
 	}
+	
 
 	@Override
 	public int[] remove(int[] numbers) {
