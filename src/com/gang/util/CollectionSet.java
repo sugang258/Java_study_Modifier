@@ -1,7 +1,6 @@
 package com.gang.util;
 
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class CollectionSet implements Collection {
 	
@@ -50,10 +49,12 @@ public class CollectionSet implements Collection {
 					nums[j] = numbers[j+1];
 				}
 				break;	
+			}else {
+				System.out.println("일치하는 숫자가 없습니다.");
 			}
 		}
 		
-		return numbers;
+		return nums;
 	}
 
 }
